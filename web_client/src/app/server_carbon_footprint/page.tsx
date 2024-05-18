@@ -6,6 +6,7 @@ import DegitalEmissionDetail from "@/components/server_footprint_checker/carbon_
 import FootprintCalculationDetail
   from "@/components/server_footprint_checker/carbon_emission_details/FootprintCalculationDetail";
 import {StepGuidance} from "@/components/server_footprint_checker/recomendation_to_users/StepGuidance";
+import WhyCare from "@/components/server_footprint_checker/recomendation_to_users/WhyCare";
 
 function Page() {
   return (
@@ -23,6 +24,7 @@ function Page() {
         <div
           className=" h-full w-[90%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 space-y-5 max-w-[360px] md:space-y-0 md:max-w-none items-stretch">
           <StepGuidance/>
+          <WhyCare/>
         </div>
       </footer>
     </>
