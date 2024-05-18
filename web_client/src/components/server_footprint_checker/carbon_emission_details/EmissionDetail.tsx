@@ -5,7 +5,7 @@ import {FcElectricity} from "react-icons/fc";
 
 const Emissions = () => {
   return (
-    <div className="border-2 border-primary rounded-2xl  w-[370px]  h-[430px]">
+    <div className="border-2 border-primary rounded-2xl">
       <InfoWrapper
         icon={<FcElectricity/>}
         title="Impact of digital emissions"

@@ -11,7 +11,7 @@ import InfoWrapper from "@/components/server_footprint_checker/sub_components/In
 
 const FootprintCalculationDetail = () => {
   return (
-    <div className="border-2 border-primary rounded-2xl  w-[370px] h-[430px]">
+    <div className="border-2 border-primary rounded-2xl ">
       <InfoWrapper
         icon={<IoCalculator/>}
         title="Carbon footprint"
