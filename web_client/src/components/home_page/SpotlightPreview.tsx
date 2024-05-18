@@ -1,5 +1,4 @@
 import React from "react";
-import { cn } from "@/utils/cn";
 import { Spotlight } from "../ui/Spotlight";
 import TextBody from "@/components/home_page/TextBody";
 import TrySection from "@/components/home_page/TrySection";

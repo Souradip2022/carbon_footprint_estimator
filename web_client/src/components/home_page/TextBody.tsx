@@ -5,7 +5,7 @@ function TextBody() {
 
   return (
     <div
-      className="h-fit w-full my-16 px-8 flex flex-col justify-center items-center relative ">
+      className="h-fit w-full my-20 px-8 flex flex-col justify-center items-center relative ">
       <div className=" h-fit md:w-[750px] lg:w-[800px] px-8 flex flex-col justify-center items-center relative  gap-y-2">
 
         <div className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 from-10% via-green-300 via-[percentage:20%_70%] to-green-500 to-100%  md:h-[70px] flex justify-center items-center

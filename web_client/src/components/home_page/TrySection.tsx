@@ -6,14 +6,16 @@ function TrySection() {
     <div className="top-9 w-full h-56 bg-gray-950 flex flex-col">
       <div
         className=" w-full h-full backdrop-brightness-150  flex  flex-col gap-6 justify-center items-center">
-        <p className="md:w-[550px] px-8 text-center font-sans tracking-wide text-muted-foreground text-lg ">Here you can find
+        <p className="md:w-[550px] px-8 text-center font-sans tracking-wide text-muted-foreground text-lg ">Here you can
+          find
           innovative and environmentally-responsive concepts in its endeavor to create sustainable solutions in carbon
           emission reduction</p>
 
         <div className={"flex items-center justify-center"}>
-          <Link href={"/"}>
+          <Link href={"/server_carbon_footprint"}>
             <button
               className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full  text-xs font-semibold leading-6  text-white inline-block p-px ">
+
         <span className="absolute inset-0 overflow-hidden rounded-full p-2">
           <span
             className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100 "></span>
