@@ -48,7 +48,7 @@ export function NavBarButton3() {
     <>
       <DropdownMenu>
         <Link href={"/"}>
-          <DropdownMenuTrigger className=" text-lg p-1.5">Developer</DropdownMenuTrigger>
+          <DropdownMenuTrigger className=" text-lg p-1.5">Developers</DropdownMenuTrigger>
         </Link>
       </DropdownMenu>
     </>
