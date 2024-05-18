@@ -28,7 +28,7 @@ const AverageWebsiteConsumption = () => {
   ];
 
   return (
-    <div className="border-2 border-primary rounded-2xl ">
+    <div className="border-2 border-primary rounded-2xl  w-[390px] h-[420px]">
       <InfoWrapper
         icon={<FcGlobe/>}
         title="Average Website"
