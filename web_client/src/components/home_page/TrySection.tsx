@@ -12,7 +12,7 @@ function TrySection() {
           emission reduction</p>
 
         <div className={"flex items-center justify-center"}>
-          <Link href={"/server_carbon_footprint"}>
+          <Link href={"all_models/server_carbon_footprint"}>
             <button
               className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full  text-xs font-semibold leading-6  text-white inline-block p-px ">
 

@@ -19,7 +19,8 @@ export function NavBarButton1() {
     <>
       <DropdownMenu>
         <Link href={"/"}>
-          <DropdownMenuTrigger className=" text-lg p-1.5">Home</DropdownMenuTrigger>
+          <DropdownMenuTrigger
+            className=" text-lg p-1.5 border-2 border-transparent hover:border-muted-foreground hover:rounded-md">Home</DropdownMenuTrigger>
         </Link>
       </DropdownMenu>
     </>
@@ -27,17 +28,39 @@ export function NavBarButton1() {
 }
 
 export function NavBarButton2() {
-  const [position, setPosition] = React.useState("bottom")
+  const models = ["Flights",
+    "Servers",
+    "Hotels",
+    "eCommerce",
+    "Freight",
+    "Electricity",
+    "Fuel",
+    "Vehicle Type",
+    "Vehicle Model",
+    "Vehicle Makes"
+  ];
+
 
   return (
     <>
       <DropdownMenu>
-        <DropdownMenuTrigger className=" text-lg p-1.5">Models</DropdownMenuTrigger>
-        <DropdownMenuContent className={"flex flex-col gap-2 w-52"}>
-          <DropdownMenuItem className={"text-center"}>Profile</DropdownMenuItem>
-          <DropdownMenuItem className={"text-center"}>Billing</DropdownMenuItem>
-          <DropdownMenuItem className={"text-center"}>Team</DropdownMenuItem>
+        <DropdownMenuTrigger
+          className=" text-lg p-1.5 border-2 border-transparent hover:border-muted-foreground hover:rounded-md">Models</DropdownMenuTrigger>
+        <DropdownMenuContent className={"flex flex-col gap-2 w-52 box-content text-primary p-1 bg-secondary"}>
+          <div className=" w-full h-full  backdrop-saturate-100">
+            <Link href="/all_models">
+              <DropdownMenuLabel className={"pb-0 pt-1 text-center"}>All models</DropdownMenuLabel>
+            </Link>
+            <DropdownMenuSeparator/>
+
+            {models.map(item =>
+              <DropdownMenuItem className={"text-center"} key={item}>
+                {item}
+              </DropdownMenuItem>
+            )}
+          </div>
         </DropdownMenuContent>
+
       </DropdownMenu>
     </>
   )
@@ -48,7 +71,8 @@ export function NavBarButton3() {
     <>
       <DropdownMenu>
         <Link href={"/"}>
-          <DropdownMenuTrigger className=" text-lg p-1.5">Developers</DropdownMenuTrigger>
+          <DropdownMenuTrigger
+            className=" text-lg p-1.5 border-2 border-transparent hover:border-muted-foreground hover:rounded-md">Developers</DropdownMenuTrigger>
         </Link>
       </DropdownMenu>
     </>

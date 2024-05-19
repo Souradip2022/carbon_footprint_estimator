@@ -28,31 +28,31 @@ const AverageWebsiteConsumption = () => {
   ];
 
   return (
-    <div className="border-2 border-primary rounded-2xl ">
-      <InfoWrapper
-        icon={<FcGlobe/>}
-        title="Average Website"
-        gradient=""
-      >
-        <small className="font-light text-sm md:text-base pt-2 block">
-          With 10,000 views a month
-        </small>
-        <div className=" flex flex-col items-center justify-center py-4">
-          {averageInfo.map((card, i) => (
-            <Card
-              icon={card.icon}
-              description={card.description}
-              stat={card.stat}
-              key={i}
-              loadingData={false}
-            />
-          ))}
-        </div>
-        <small className="text-xs md:text-base text-gray-400">
-          As per Website Carbon Calculator
-        </small>
-      </InfoWrapper>
-    </div>
+
+    <InfoWrapper
+      icon={<FcGlobe/>}
+      title="Average Website"
+      gradient=""
+    >
+      <small className="font-light text-sm md:text-base pt-2 block">
+        With 10,000 views a month
+      </small>
+      <div className=" flex flex-col items-center justify-center py-4">
+        {averageInfo.map((card, i) => (
+          <Card
+            icon={card.icon}
+            description={card.description}
+            stat={card.stat}
+            key={i}
+            loadingData={false}
+          />
+        ))}
+      </div>
+      <small className="text-xs md:text-base text-gray-400">
+        As per Website Carbon Calculator
+      </small>
+    </InfoWrapper>
+
   );
 };
 
