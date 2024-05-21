@@ -59,8 +59,6 @@ export function NightLamp() {
             </BackgroundGradient>
           </div>
         )}
-
-
       </div>
 
     </LampContainer>
