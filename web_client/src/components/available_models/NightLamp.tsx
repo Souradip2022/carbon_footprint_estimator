@@ -6,7 +6,6 @@ import {BackgroundGradient} from "@/components/ui/background-gradient";
 import modelData from "@/data/modelData.json"
 import Link from "next/link";
 import Image from "next/image";
-import {generateKey} from "node:crypto";
 import {Button} from "@/components/ui/button";
 
 interface ModelData {
@@ -25,7 +24,7 @@ export function NightLamp() {
   }
 
   return (
-    <LampContainer className="relative h-[80rem] w-full flex flex-col justify-center items-center
+    <LampContainer className="relative lg:h-[96rem] h-[80rem] w-full flex flex-col justify-center items-center
     ">
       <motion.h1
         initial={{opacity: 0.5, y: 100}}
@@ -35,17 +34,18 @@ export function NightLamp() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 text-center text-4xl bg-clip-text font-medium tracking-tight text-transparent md:text-7xl w-full absolute -top-[700px]">
+        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 text-center text-4xl bg-clip-text font-medium tracking-tight text-transparent md:text-7xl w-full absolute lg:-top-[1000px] -top-[800px]">
         List of all our available Models
       </motion.h1>
 
-      <div className="grid lg:grid-cols-3 gap-10 grid-cols-1 md:grid-cols-2 my-20 w-full absolute -top-[550px]">
+      <div className="grid lg:grid-cols-3 gap-10 grid-cols-1 md:grid-cols-2 my-20 w-full absolute lg:-top-[850px] -top-[700px] px-6">
         {data.map(item =>
           <div
             className="flex items-center justify-center w-[100%] h-full"
             key={generateRandomKey()}>
             <BackgroundGradient
-              className="flex w-full flex-col gap-5 rounded-[22px] relative bg-zinc-900  items-center justify-around lg:min-h-[535px] py-3 px-4 lg:max-w-[500px]">
+              className="flex w-full flex-col gap-5 rounded-[22px] relative bg-zinc-900  items-center justify-around lg:min-h-[535px] py-3 px-4 lg:max-w-[500px]
+              max-w-[340px]">
               <Image
                 src={item.image} alt={item.name} height="225"
                 width="350" className="rounded-sm w-[350px] h-[225px]"/>

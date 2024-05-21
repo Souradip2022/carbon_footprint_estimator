@@ -1,6 +1,8 @@
 "use client";
 import {motion} from "framer-motion";
 import {cn} from "@/utils/cn";
+import {useEffect, useRef, useState} from "react";
+import {useSize} from "@radix-ui/react-use-size";
 
 
 export const LampContainer = ({
@@ -10,11 +12,31 @@ export const LampContainer = ({
   children: React.ReactNode;
   className?: string;
 }) => {
+  const lightRef = useRef<any>(null);
+  const [size, setSize] = useState<boolean>(false);
+
+  useEffect(() => {
+    function handleSize() {
+      if (lightRef.current && window.innerWidth < 500) {
+        setSize(true);
+      } else {
+        setSize(false);
+      }
+    }
+
+    window.addEventListener('resize', handleSize);
+
+    return () => window.removeEventListener('resize', handleSize);
+  }, []);
+
+  /*useEffect(() => {
+    console.log(size);
+  }, [size]);*/
 
   return (
     <div
       className={cn(
-        "relative flex min-h-screen flex-col items-center justify-center  bg-slate-950 w-full rounded-md z-0",
+        "relative flex min-h-screen flex-col items-center justify-center  bg-slate-950 w-full rounded-md z-0 overflow-hidden",
         className
       )}
     >
@@ -71,9 +93,9 @@ export const LampContainer = ({
             className="absolute inset-auto z-30 h-36 w-64 -translate-y-[6rem] rounded-full bg-cyan-400 blur-2xl"
           ></motion.div>
           <motion.div
-            initial={{width: "15rem"}}
-            whileInView={{ width: "30rem" }}
-
+            initial={size ? {width: "15rem"} : {width: "30rem"}}
+            whileInView={{width: "18rem"}}
+            ref={lightRef}
             transition={{
               delay: 0.3,
               duration: 0.8,
