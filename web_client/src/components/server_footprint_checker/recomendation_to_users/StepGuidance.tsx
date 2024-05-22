@@ -32,7 +32,7 @@ export function StepGuidance() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
-          <AccordionTrigger>Support reforestation projcets</AccordionTrigger>
+          <AccordionTrigger>Support reforestation projects</AccordionTrigger>
           <AccordionContent>
             Reforestation and conservation projects can help to absorb carbon
             dioxide from the atmosphere, offsetting the emissions associated

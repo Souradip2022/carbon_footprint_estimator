@@ -15,6 +15,7 @@ const Emissions = () => {
         year. Responsible for 3.7% of global carbon emissions, the emissions
         caused by the Internet are comparable those of the aviation industry.
       </p>
+      <br/>
       <small>International Energy Agency, 2019</small>
     </InfoWrapper>
   );
