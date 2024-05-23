@@ -1,5 +1,5 @@
-import Card from "@/components/server_footprint_checker/sub_components/Card";
-import InfoWrapper from "@/components/server_footprint_checker/sub_components/InfoWrapper";
+import Card from "@/components/shared_components/sub_components/Card";
+import InfoWrapper from "@/components/shared_components/sub_components/InfoWrapper";
 import React from "react";
 import {CgCoffee} from "react-icons/cg";
 import {FcGlobe} from "react-icons/fc";

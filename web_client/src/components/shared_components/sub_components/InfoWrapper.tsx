@@ -1,5 +1,5 @@
 import React from "react";
-import Badge from "@/components/server_footprint_checker/sub_components/Badge";
+import Badge from "@/components/shared_components/sub_components/Badge";
 
 interface Props {
   icon: React.ReactNode;
