@@ -1,4 +1,4 @@
-import InfoWrapper from "@/components/server_footprint_checker/sub_components/InfoWrapper";
+import InfoWrapper from "@/components/shared_components/sub_components/InfoWrapper";
 import {BiRun} from "react-icons/bi";
 import React from "react";
 

@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import {BsFillBalloonHeartFill} from "react-icons/bs";
-import InfoWrapper from "@/components/server_footprint_checker/sub_components/InfoWrapper" ;
+import InfoWrapper from "@/components/shared_components/sub_components/InfoWrapper" ;
 
 export function StepGuidance() {
   return (
