@@ -34,7 +34,7 @@ export function NightLamp() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 text-center text-4xl bg-clip-text font-medium tracking-tight text-transparent md:text-7xl w-full absolute lg:-top-[1000px] -top-[800px]">
+        className="mt-8 md:bg-gradient-to-br from-slate-300 to-slate-500 py-4 text-center text-4xl md:bg-clip-text font-medium tracking-tight md:text-transparent text-secondary-foreground md:text-7xl w-full absolute lg:-top-[1000px] -top-[800px]">
         List of all our available Models
       </motion.h1>
 
