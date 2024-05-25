@@ -10,7 +10,6 @@ import WhyCare from "@/components/shared_components/recomendation_to_users/WhyCa
 import ApiLimitations from "@/components/shared_components/recomendation_to_users/ApiLimitations";
 import InputUrl from "@/components/server_footprint_checker/calculate_section/InputUrl";
 
-
 function Page({params}: { params: { slug: string } }) {
   return (
     <>

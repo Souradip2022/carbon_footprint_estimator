@@ -1,24 +1,10 @@
 "use client";
 import {IoEarthSharp} from "react-icons/io5";
-import {Gradient} from "@/utils/gradient";
 import {useEffect} from "react";
 import Link from "next/link";
 
 
 const HeroElement = () => {
-
-  useEffect(() => {
-    if (!window) {
-      return;
-    }
-    const gradient = new Gradient(
-      document.querySelector("#gradient-canvas"),
-      window.innerWidth,
-      window.innerHeight
-    );
-    // @ts-ignore
-    gradient.initGradient("#gradient-canvas");
-  }, []);
 
   return (
 

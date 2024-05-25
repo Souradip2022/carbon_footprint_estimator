@@ -68,8 +68,6 @@ const config = {
             opacity: "1",
             transform: "translate(-50%,-40%) scale(1)",
           },
-
-
         },
       },
     },
@@ -77,4 +75,4 @@ const config = {
   plugins: [require("tailwindcss-animate")],
 } satisfies Config
 
-export default config
+export default config;

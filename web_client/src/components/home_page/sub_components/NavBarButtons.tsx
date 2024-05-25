@@ -1,6 +1,5 @@
 "use client"
 import React from "react"
-import {Button} from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -28,7 +27,8 @@ export function NavBarButton1() {
 }
 
 export function NavBarButton2() {
-  const models = ["Flights",
+  const models = [
+    "Flights",
     "Servers",
     "Hotels",
     "eCommerce",
