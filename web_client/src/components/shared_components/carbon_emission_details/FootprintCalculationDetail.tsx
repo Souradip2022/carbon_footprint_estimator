@@ -9,9 +9,8 @@ import {VscDeviceMobile} from "react-icons/vsc";
 import {MdOutlineCenterFocusStrong} from "react-icons/md";
 import InfoWrapper from "@/components/shared_components/sub_components/InfoWrapper";
 
-import urlServerData from "@/components/server_footprint_checker/data/EmissionDetailServer.json";
-
 const FootprintCalculationDetail = ({params}: { params: { slug: string } }) => {
+
   return (
     <InfoWrapper
       icon={<IoCalculator/>}

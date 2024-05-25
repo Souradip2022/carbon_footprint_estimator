@@ -3,20 +3,31 @@ import Image from "next/image";
 import React from "react";
 import {FcElectricity} from "react-icons/fc";
 
+import urlServerData from "@/components/server_footprint_checker/data/EmissionDetailServer.json";
+
 const Emissions = ({params}: {params : {slug: string}}) => {
+
+  let data: { title: string; description: string; ending: string } = {
+    title: "Default Title",
+    description: "Default Description",
+    ending: "Default Ending"
+  };
+
+  if (params.slug === "server_carbon_footprint") {
+    data = urlServerData;
+  }
+
   return (
     <InfoWrapper
       icon={<FcElectricity/>}
-      title="Impact of digital emissions"
+      title={`${data.title}`}
       gradient="from-background to-renaissance text-glitter-shower"
     >
       <p className="text-lg">
-        The Internet devours a staggering 307 gigawatts of electricity every
-        year. Responsible for 3.7% of global carbon emissions, the emissions
-        caused by the Internet are comparable those of the aviation industry.
+        {data.description}
       </p>
       <br/>
-      <div>International Energy Agency, 2019</div>
+      <div>{data.ending}</div>
     </InfoWrapper>
   );
 };

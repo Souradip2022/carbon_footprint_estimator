@@ -8,7 +8,6 @@ import FootprintCalculationDetail
 import {StepGuidance} from "@/components/shared_components/recomendation_to_users/StepGuidance";
 import WhyCare from "@/components/shared_components/recomendation_to_users/WhyCare";
 import ApiLimitations from "@/components/shared_components/recomendation_to_users/ApiLimitations";
-import modelData from "@/data/modelData.json"
 import InputUrl from "@/components/server_footprint_checker/calculate_section/InputUrl";
 
 
