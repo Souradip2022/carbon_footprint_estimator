@@ -1,10 +1,18 @@
 import InfoWrapper from "@/components/shared_components/sub_components/InfoWrapper";
 import React from "react";
 import {AiFillQuestionCircle} from "react-icons/ai";
+import urlServerData from "@/components/server_footprint_checker/data/ApiLimitationsServer.json";
 
-const ApiLimitations = () => {
+const ApiLimitations = ({params}: { params: { slug: string } }) => {
+
+  let data: Array<string>;
+  if (params.slug === "server_carbon_footprint") {
+    data = urlServerData;
+  } else {
+    data = [];
+  }
+
   return (
-
     <InfoWrapper
       icon={<AiFillQuestionCircle/>}
       title="Limitations"
@@ -12,18 +20,9 @@ const ApiLimitations = () => {
     >
       <div className="">
         <ul className="list-disc space-y-2 pl-6">
-          <li>
-            The potential margin of error widens the broader your system
-            boundaries get.
-          </li>
-          <li>
-            We only test the homepage, to test all the pages in your website we
-            would have to add a script.
-          </li>
-          <li>
-            In our calculations, we assume that all users are new visitors to
-            your page.
-          </li>
+          {data.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ul>
       </div>
     </InfoWrapper>

@@ -5,7 +5,8 @@ import {CgCoffee} from "react-icons/cg";
 import {FcGlobe} from "react-icons/fc";
 import {IoMdRocket} from "react-icons/io";
 
-const AverageWebsiteConsumption = () => {
+const AverageWebsiteConsumption = ({params}: { params: { slug: string } }) => {
+
   const averageInfo = [
     {
       stat: "60kg CO2",
