@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import {FcElectricity} from "react-icons/fc";
 
-const Emissions = () => {
+const Emissions = ({params}: {params : {slug: string}}) => {
   return (
     <InfoWrapper
       icon={<FcElectricity/>}
@@ -16,7 +16,7 @@ const Emissions = () => {
         caused by the Internet are comparable those of the aviation industry.
       </p>
       <br/>
-      <small>International Energy Agency, 2019</small>
+      <div>International Energy Agency, 2019</div>
     </InfoWrapper>
   );
 };

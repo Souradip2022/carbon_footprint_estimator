@@ -2,7 +2,9 @@ import InfoWrapper from "@/components/shared_components/sub_components/InfoWrapp
 import {BiRun} from "react-icons/bi";
 import React from "react";
 
-const WhyCare = () => {
+import urlServerData from "@/components/server_footprint_checker/data/WhyCareServer.json"
+
+const WhyCare = ({params}: { params: { slug: string } }) => {
   return (
     <InfoWrapper
       icon={<BiRun/>}

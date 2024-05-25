@@ -1,0 +1,14 @@
+[
+  {
+    "trigger": "Use an energy efficient host",
+    "content": "A web hosting provider that uses renewable energy and has a strong track record of energy efficiency can help reduce your emissions."
+  },
+  {
+    "trigger": "Optimise your website",
+    "content": "A faster loading site uses less energy and generates fewer emissions, there are many ways to optimise for this i.e., optimising images, caching, and reducing number of plugins."
+  },
+  {
+    "trigger": "Support reforestation projects",
+    "content": "Reforestation and conservation projects can help to absorb carbon dioxide from the atmosphere, offsetting the emissions associated with your website."
+  }
+]

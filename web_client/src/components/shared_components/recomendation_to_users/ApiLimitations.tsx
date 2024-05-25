@@ -2,7 +2,7 @@ import InfoWrapper from "@/components/shared_components/sub_components/InfoWrapp
 import React from "react";
 import {AiFillQuestionCircle} from "react-icons/ai";
 
-const ApiLimitations = () => {
+const ApiLimitations = ({params}: { params: { slug: string } }) => {
   return (
 
     <InfoWrapper

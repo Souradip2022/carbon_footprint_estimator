@@ -5,9 +5,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import {BsFillBalloonHeartFill} from "react-icons/bs";
-import InfoWrapper from "@/components/shared_components/sub_components/InfoWrapper" ;
+import InfoWrapper from "@/components/shared_components/sub_components/InfoWrapper";
 
-export function StepGuidance() {
+import urlServerData from "@/components/server_footprint_checker/data/StepGuidanceServer.json";
+
+export function StepGuidance({params}: { params: { slug: string } }) {
   return (
 
     <InfoWrapper
@@ -23,6 +25,7 @@ export function StepGuidance() {
             track record of energy efficiency can help reduce your emissions.
           </AccordionContent>
         </AccordionItem>
+
         <AccordionItem value="item-2">
           <AccordionTrigger>Optimise your website</AccordionTrigger>
           <AccordionContent>
@@ -31,6 +34,7 @@ export function StepGuidance() {
             images, caching, and reducing number of plugins.
           </AccordionContent>
         </AccordionItem>
+
         <AccordionItem value="item-3">
           <AccordionTrigger>Support reforestation projects</AccordionTrigger>
           <AccordionContent>
