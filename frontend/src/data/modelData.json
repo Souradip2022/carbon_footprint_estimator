@@ -1,0 +1,32 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1592985684811-6c0f98adb014?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "name": "Flight Emissions Calculator",
+    "description": "Calculate the carbon emissions generated from flights. This calculator estimates emissions based on flight distance, duration, and aircraft type.",
+    "slug": "flight-emissions-calculator"
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1564457461758-8ff96e439e83?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "name": "Server Carbon Footprint Estimator",
+    "description": "Estimate the carbon footprint of server usage. This tool calculates emissions based on server type, utilization, and energy efficiency.",
+    "slug": "server_carbon_footprint"
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1495365200479-c4ed1d35e1aa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "name": "Hotel Carbon Impact Calculator",
+    "description": "Assess the carbon impact of hotel stays. This calculator estimates emissions based on factors like energy consumption, water usage, and waste generation.",
+    "slug": "hotel-carbon-impact-calculator"
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "name": "Electricity Carbon Usage Estimator",
+    "description": "Estimate carbon emissions from electricity usage. This tool helps calculate emissions based on energy source, consumption patterns, and efficiency measures.",
+    "slug": "electricity-carbon-usage-estimator"
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1622700392590-641ce912a9d4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "name": "Vehicle Emissions by Model",
+    "description": "Analyze vehicle emissions by model. This tool provides insights into carbon emissions of different vehicle models based on factors like fuel efficiency and engine type.",
+    "slug": "vehicle-emissions-by-model"
+  }
+]
